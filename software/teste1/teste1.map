@@ -88,7 +88,7 @@ LOAD c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/
                 0x00010020                PROVIDE (__ram_exceptions_end, ABSOLUTE (.))
                 0x00010020                PROVIDE (__flash_exceptions_start, LOADADDR (.exceptions))
 
-.text           0x00010020      0x5ec
+.text           0x00010020      0x614
                 0x00010020                PROVIDE (stext, ABSOLUTE (.))
  *(.interp)
  *(.hash)
@@ -135,167 +135,167 @@ LOAD c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/
  *(.text .stub .text.* .gnu.linkonce.t.*)
  .text          0x00010020       0x3c ../teste1_bsp//obj/HAL/src/crt0.o
                 0x00010020                _start
- .text          0x0001005c      0x2b0 obj/default/hello_world_small.o
+ .text          0x0001005c      0x2d8 obj/default/hello_world_small.o
                 0x0001005c                f_maq
-                0x00010184                f_timer3
-                0x000101ac                f_timer2
-                0x000101e8                f_timer1
-                0x00010224                f_timers
-                0x000102a8                setup
-                0x000102dc                loop
-                0x000102f8                main
- .text          0x0001030c       0x8c ../teste1_bsp/\libhal_bsp.a(alt_load.o)
-                0x0001032c                alt_load
- .text          0x00010398       0x2c ../teste1_bsp/\libhal_bsp.a(alt_main.o)
-                0x00010398                alt_main
- .text          0x000103c4        0x4 ../teste1_bsp/\libhal_bsp.a(alt_usleep.o)
-                0x000103c4                usleep
- .text          0x000103c8       0x24 ../teste1_bsp/\libhal_bsp.a(alt_sys_init.o)
-                0x000103c8                alt_sys_init
-                0x000103cc                alt_irq_init
- .text          0x000103ec       0x8c ../teste1_bsp/\libhal_bsp.a(alt_busy_sleep.o)
-                0x000103ec                alt_busy_sleep
- .text          0x00010478        0x4 ../teste1_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
-                0x00010478                alt_dcache_flush_all
- .text          0x0001047c        0x4 ../teste1_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
-                0x0001047c                alt_icache_flush_all
- .text          0x00010480        0x8 ../teste1_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
-                0x00010480                altera_nios2_qsys_irq_init
- .text          0x00010488      0x14c c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
-                0x00010504                __divsi3
-                0x00010564                __modsi3
-                0x000105c4                __udivsi3
-                0x000105cc                __umodsi3
- .text          0x000105d4       0x38 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
-                0x000105d4                __mulsi3
+                0x000101ac                f_timer3
+                0x000101d4                f_timer2
+                0x00010210                f_timer1
+                0x0001024c                f_timers
+                0x000102d0                setup
+                0x00010304                loop
+                0x00010320                main
+ .text          0x00010334       0x8c ../teste1_bsp/\libhal_bsp.a(alt_load.o)
+                0x00010354                alt_load
+ .text          0x000103c0       0x2c ../teste1_bsp/\libhal_bsp.a(alt_main.o)
+                0x000103c0                alt_main
+ .text          0x000103ec        0x4 ../teste1_bsp/\libhal_bsp.a(alt_usleep.o)
+                0x000103ec                usleep
+ .text          0x000103f0       0x24 ../teste1_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x000103f0                alt_sys_init
+                0x000103f4                alt_irq_init
+ .text          0x00010414       0x8c ../teste1_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+                0x00010414                alt_busy_sleep
+ .text          0x000104a0        0x4 ../teste1_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+                0x000104a0                alt_dcache_flush_all
+ .text          0x000104a4        0x4 ../teste1_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+                0x000104a4                alt_icache_flush_all
+ .text          0x000104a8        0x8 ../teste1_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+                0x000104a8                altera_nios2_qsys_irq_init
+ .text          0x000104b0      0x14c c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+                0x0001052c                __divsi3
+                0x0001058c                __modsi3
+                0x000105ec                __udivsi3
+                0x000105f4                __umodsi3
+ .text          0x000105fc       0x38 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+                0x000105fc                __mulsi3
  *(.gnu.warning.*)
  *(.fini)
-                0x0001060c                PROVIDE (__etext, ABSOLUTE (.))
-                0x0001060c                PROVIDE (_etext, ABSOLUTE (.))
-                0x0001060c                PROVIDE (etext, ABSOLUTE (.))
+                0x00010634                PROVIDE (__etext, ABSOLUTE (.))
+                0x00010634                PROVIDE (_etext, ABSOLUTE (.))
+                0x00010634                PROVIDE (etext, ABSOLUTE (.))
  *(.eh_frame_hdr)
-                0x0001060c                . = ALIGN (0x4)
-                0x0001060c                PROVIDE (__preinit_array_start, ABSOLUTE (.))
+                0x00010634                . = ALIGN (0x4)
+                0x00010634                PROVIDE (__preinit_array_start, ABSOLUTE (.))
  *(.preinit_array)
-                0x0001060c                PROVIDE (__preinit_array_end, ABSOLUTE (.))
-                0x0001060c                PROVIDE (__init_array_start, ABSOLUTE (.))
+                0x00010634                PROVIDE (__preinit_array_end, ABSOLUTE (.))
+                0x00010634                PROVIDE (__init_array_start, ABSOLUTE (.))
  *(.init_array)
-                0x0001060c                PROVIDE (__init_array_end, ABSOLUTE (.))
-                0x0001060c                PROVIDE (__fini_array_start, ABSOLUTE (.))
+                0x00010634                PROVIDE (__init_array_end, ABSOLUTE (.))
+                0x00010634                PROVIDE (__fini_array_start, ABSOLUTE (.))
  *(.fini_array)
-                0x0001060c                PROVIDE (__fini_array_end, ABSOLUTE (.))
+                0x00010634                PROVIDE (__fini_array_end, ABSOLUTE (.))
  *(.eh_frame)
  *(.gcc_except_table)
  *(.dynamic)
-                0x0001060c                PROVIDE (__CTOR_LIST__, ABSOLUTE (.))
+                0x00010634                PROVIDE (__CTOR_LIST__, ABSOLUTE (.))
  *(.ctors)
  *(SORT(.ctors.*))
-                0x0001060c                PROVIDE (__CTOR_END__, ABSOLUTE (.))
-                0x0001060c                PROVIDE (__DTOR_LIST__, ABSOLUTE (.))
+                0x00010634                PROVIDE (__CTOR_END__, ABSOLUTE (.))
+                0x00010634                PROVIDE (__DTOR_LIST__, ABSOLUTE (.))
  *(.dtors)
  *(SORT(.dtors.*))
-                0x0001060c                PROVIDE (__DTOR_END__, ABSOLUTE (.))
+                0x00010634                PROVIDE (__DTOR_END__, ABSOLUTE (.))
  *(.jcr)
-                0x0001060c                . = ALIGN (0x4)
+                0x00010634                . = ALIGN (0x4)
 
-.rodata         0x0001060c        0x0
-                0x0001060c                PROVIDE (__ram_rodata_start, ABSOLUTE (.))
-                0x0001060c                . = ALIGN (0x4)
+.rodata         0x00010634        0x0
+                0x00010634                PROVIDE (__ram_rodata_start, ABSOLUTE (.))
+                0x00010634                . = ALIGN (0x4)
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  *(.rodata1)
-                0x0001060c                . = ALIGN (0x4)
-                0x0001060c                PROVIDE (__ram_rodata_end, ABSOLUTE (.))
-                0x0001060c                PROVIDE (__flash_rodata_start, LOADADDR (.rodata))
+                0x00010634                . = ALIGN (0x4)
+                0x00010634                PROVIDE (__ram_rodata_end, ABSOLUTE (.))
+                0x00010634                PROVIDE (__flash_rodata_start, LOADADDR (.rodata))
 
-.rwdata         0x0001060c        0x8 load address 0x00010614
-                0x0001060c                PROVIDE (__ram_rwdata_start, ABSOLUTE (.))
-                0x0001060c                . = ALIGN (0x4)
+.rwdata         0x00010634        0x8 load address 0x0001063c
+                0x00010634                PROVIDE (__ram_rwdata_start, ABSOLUTE (.))
+                0x00010634                . = ALIGN (0x4)
  *(.got.plt)
  *(.got)
  *(.data1)
  *(.data .data.* .gnu.linkonce.d.*)
- .data          0x0001060c        0x0 ../teste1_bsp//obj/HAL/src/crt0.o
- .data          0x0001060c        0x0 obj/default/hello_world_small.o
- .data          0x0001060c        0x0 ../teste1_bsp/\libhal_bsp.a(alt_load.o)
- .data          0x0001060c        0x0 ../teste1_bsp/\libhal_bsp.a(alt_main.o)
- .data          0x0001060c        0x0 ../teste1_bsp/\libhal_bsp.a(alt_usleep.o)
- .data          0x0001060c        0x0 ../teste1_bsp/\libhal_bsp.a(alt_sys_init.o)
- .data          0x0001060c        0x0 ../teste1_bsp/\libhal_bsp.a(alt_busy_sleep.o)
- .data          0x0001060c        0x0 ../teste1_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .data          0x0001060c        0x0 ../teste1_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .data          0x0001060c        0x0 ../teste1_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
- .data          0x0001060c        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .data          0x0001060c        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
-                0x0001860c                _gp = ABSOLUTE ((. + 0x8000))
-                0x0001860c                PROVIDE (gp, _gp)
+ .data          0x00010634        0x0 ../teste1_bsp//obj/HAL/src/crt0.o
+ .data          0x00010634        0x0 obj/default/hello_world_small.o
+ .data          0x00010634        0x0 ../teste1_bsp/\libhal_bsp.a(alt_load.o)
+ .data          0x00010634        0x0 ../teste1_bsp/\libhal_bsp.a(alt_main.o)
+ .data          0x00010634        0x0 ../teste1_bsp/\libhal_bsp.a(alt_usleep.o)
+ .data          0x00010634        0x0 ../teste1_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .data          0x00010634        0x0 ../teste1_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .data          0x00010634        0x0 ../teste1_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .data          0x00010634        0x0 ../teste1_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .data          0x00010634        0x0 ../teste1_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .data          0x00010634        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .data          0x00010634        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+                0x00018634                _gp = ABSOLUTE ((. + 0x8000))
+                0x00018634                PROVIDE (gp, _gp)
  *(.rwdata .rwdata.*)
  *(.sdata .sdata.* .gnu.linkonce.s.*)
- .sdata         0x0001060c        0x1 obj/default/hello_world_small.o
-                0x0001060c                estado
- *fill*         0x0001060d        0x3 00
- .sdata         0x00010610        0x4 ../teste1_bsp/\libhal_bsp.a(alt_sys_init.o)
-                0x00010610                jtag_uart_avsb
+ .sdata         0x00010634        0x1 obj/default/hello_world_small.o
+                0x00010634                estado
+ *fill*         0x00010635        0x3 00
+ .sdata         0x00010638        0x4 ../teste1_bsp/\libhal_bsp.a(alt_sys_init.o)
+                0x00010638                jtag_uart_avsb
  *(.sdata2 .sdata2.* .gnu.linkonce.s2.*)
-                0x00010614                . = ALIGN (0x4)
-                0x00010614                _edata = ABSOLUTE (.)
-                0x00010614                PROVIDE (edata, ABSOLUTE (.))
-                0x00010614                PROVIDE (__ram_rwdata_end, ABSOLUTE (.))
-                0x00010614                PROVIDE (__flash_rwdata_start, LOADADDR (.rwdata))
+                0x0001063c                . = ALIGN (0x4)
+                0x0001063c                _edata = ABSOLUTE (.)
+                0x0001063c                PROVIDE (edata, ABSOLUTE (.))
+                0x0001063c                PROVIDE (__ram_rwdata_end, ABSOLUTE (.))
+                0x0001063c                PROVIDE (__flash_rwdata_start, LOADADDR (.rwdata))
 
-.bss            0x0001061c       0x24
-                0x0001061c                __bss_start = ABSOLUTE (.)
-                0x0001061c                PROVIDE (__sbss_start, ABSOLUTE (.))
-                0x0001061c                PROVIDE (___sbss_start, ABSOLUTE (.))
+.bss            0x00010644       0x24
+                0x00010644                __bss_start = ABSOLUTE (.)
+                0x00010644                PROVIDE (__sbss_start, ABSOLUTE (.))
+                0x00010644                PROVIDE (___sbss_start, ABSOLUTE (.))
  *(.dynsbss)
  *(.sbss .sbss.* .gnu.linkonce.sb.*)
- .sbss          0x0001061c        0xa obj/default/hello_world_small.o
-                0x0001061c                dz
-                0x0001061d                un
- .sbss          0x00010626        0xb obj/default/hello_world_small.o
-                0x00010626                max_timer3
-                0x00010628                ledg
-                0x0001062a                max_timer2
-                0x0001062c                max_timer1
-                0x0001062e                key
-                0x0001062f                sw
-                0x00010630                ledr
- *fill*         0x00010631        0x3 00
- .sbss          0x00010634        0xc ../teste1_bsp/\libhal_bsp.a(alt_main.o)
-                0x00010634                alt_argc
-                0x00010638                alt_argv
-                0x0001063c                alt_envp
+ .sbss          0x00010644        0xa obj/default/hello_world_small.o
+                0x00010644                dz
+                0x00010645                un
+ .sbss          0x0001064e        0xb obj/default/hello_world_small.o
+                0x0001064e                max_timer3
+                0x00010650                ledg
+                0x00010652                max_timer2
+                0x00010654                max_timer1
+                0x00010656                key
+                0x00010657                sw
+                0x00010658                ledr
+ *fill*         0x00010659        0x3 00
+ .sbss          0x0001065c        0xc ../teste1_bsp/\libhal_bsp.a(alt_main.o)
+                0x0001065c                alt_argc
+                0x00010660                alt_argv
+                0x00010664                alt_envp
  *(.sbss2 .sbss2.* .gnu.linkonce.sb2.*)
  *(.scommon)
-                0x00010640                PROVIDE (__sbss_end, ABSOLUTE (.))
-                0x00010640                PROVIDE (___sbss_end, ABSOLUTE (.))
+                0x00010668                PROVIDE (__sbss_end, ABSOLUTE (.))
+                0x00010668                PROVIDE (___sbss_end, ABSOLUTE (.))
  *(.dynbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x00010640        0x0 ../teste1_bsp//obj/HAL/src/crt0.o
- .bss           0x00010640        0x0 obj/default/hello_world_small.o
- .bss           0x00010640        0x0 ../teste1_bsp/\libhal_bsp.a(alt_load.o)
- .bss           0x00010640        0x0 ../teste1_bsp/\libhal_bsp.a(alt_main.o)
- .bss           0x00010640        0x0 ../teste1_bsp/\libhal_bsp.a(alt_usleep.o)
- .bss           0x00010640        0x0 ../teste1_bsp/\libhal_bsp.a(alt_sys_init.o)
- .bss           0x00010640        0x0 ../teste1_bsp/\libhal_bsp.a(alt_busy_sleep.o)
- .bss           0x00010640        0x0 ../teste1_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .bss           0x00010640        0x0 ../teste1_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .bss           0x00010640        0x0 ../teste1_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
- .bss           0x00010640        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .bss           0x00010640        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .bss           0x00010668        0x0 ../teste1_bsp//obj/HAL/src/crt0.o
+ .bss           0x00010668        0x0 obj/default/hello_world_small.o
+ .bss           0x00010668        0x0 ../teste1_bsp/\libhal_bsp.a(alt_load.o)
+ .bss           0x00010668        0x0 ../teste1_bsp/\libhal_bsp.a(alt_main.o)
+ .bss           0x00010668        0x0 ../teste1_bsp/\libhal_bsp.a(alt_usleep.o)
+ .bss           0x00010668        0x0 ../teste1_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .bss           0x00010668        0x0 ../teste1_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .bss           0x00010668        0x0 ../teste1_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .bss           0x00010668        0x0 ../teste1_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .bss           0x00010668        0x0 ../teste1_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .bss           0x00010668        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .bss           0x00010668        0x0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
  *(COMMON)
-                0x00010640                . = ALIGN (0x4)
-                0x00010640                __bss_end = ABSOLUTE (.)
+                0x00010668                . = ALIGN (0x4)
+                0x00010668                __bss_end = ABSOLUTE (.)
 
 .onchip_memory2_avsb
-                0x00010640        0x0
-                0x00010640                PROVIDE (_alt_partition_onchip_memory2_avsb_start, ABSOLUTE (.))
+                0x00010668        0x0
+                0x00010668                PROVIDE (_alt_partition_onchip_memory2_avsb_start, ABSOLUTE (.))
  *(.onchip_memory2_avsb. onchip_memory2_avsb.*)
-                0x00010640                . = ALIGN (0x4)
-                0x00010640                PROVIDE (_alt_partition_onchip_memory2_avsb_end, ABSOLUTE (.))
-                0x00010640                _end = ABSOLUTE (.)
-                0x00010640                end = ABSOLUTE (.)
-                0x00010640                __alt_stack_base = ABSOLUTE (.)
-                0x00010640                PROVIDE (_alt_partition_onchip_memory2_avsb_load_addr, LOADADDR (.onchip_memory2_avsb))
+                0x00010668                . = ALIGN (0x4)
+                0x00010668                PROVIDE (_alt_partition_onchip_memory2_avsb_end, ABSOLUTE (.))
+                0x00010668                _end = ABSOLUTE (.)
+                0x00010668                end = ABSOLUTE (.)
+                0x00010668                __alt_stack_base = ABSOLUTE (.)
+                0x00010668                PROVIDE (_alt_partition_onchip_memory2_avsb_load_addr, LOADADDR (.onchip_memory2_avsb))
 
 .stab
  *(.stab)
@@ -395,50 +395,50 @@ LOAD c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/
  .debug_pubnames
                 0x00000290       0x1f c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
 
-.debug_info     0x00000000      0xccf
+.debug_info     0x00000000      0xcd3
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000       0x79 ../teste1_bsp//obj/HAL/src/crt0.o
- .debug_info    0x00000079      0x255 obj/default/hello_world_small.o
- .debug_info    0x000002ce      0x12e ../teste1_bsp/\libhal_bsp.a(alt_load.o)
- .debug_info    0x000003fc      0x125 ../teste1_bsp/\libhal_bsp.a(alt_main.o)
- .debug_info    0x00000521       0xab ../teste1_bsp/\libhal_bsp.a(alt_usleep.o)
- .debug_info    0x000005cc      0x17d ../teste1_bsp/\libhal_bsp.a(alt_sys_init.o)
- .debug_info    0x00000749       0xd0 ../teste1_bsp/\libhal_bsp.a(alt_busy_sleep.o)
- .debug_info    0x00000819       0x8d ../teste1_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .debug_info    0x000008a6       0x8d ../teste1_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .debug_info    0x00000933       0x8d ../teste1_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
- .debug_info    0x000009c0      0x21c c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .debug_info    0x00000bdc       0xf3 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_info    0x00000079      0x259 obj/default/hello_world_small.o
+ .debug_info    0x000002d2      0x12e ../teste1_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_info    0x00000400      0x125 ../teste1_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_info    0x00000525       0xab ../teste1_bsp/\libhal_bsp.a(alt_usleep.o)
+ .debug_info    0x000005d0      0x17d ../teste1_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_info    0x0000074d       0xd0 ../teste1_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .debug_info    0x0000081d       0x8d ../teste1_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_info    0x000008aa       0x8d ../teste1_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_info    0x00000937       0x8d ../teste1_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_info    0x000009c4      0x21c c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_info    0x00000be0       0xf3 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
 
-.debug_abbrev   0x00000000      0x62a
+.debug_abbrev   0x00000000      0x62c
  *(.debug_abbrev)
  .debug_abbrev  0x00000000       0x12 ../teste1_bsp//obj/HAL/src/crt0.o
- .debug_abbrev  0x00000012      0x10a obj/default/hello_world_small.o
- .debug_abbrev  0x0000011c       0x97 ../teste1_bsp/\libhal_bsp.a(alt_load.o)
- .debug_abbrev  0x000001b3       0xa6 ../teste1_bsp/\libhal_bsp.a(alt_main.o)
- .debug_abbrev  0x00000259       0x5d ../teste1_bsp/\libhal_bsp.a(alt_usleep.o)
- .debug_abbrev  0x000002b6       0xe3 ../teste1_bsp/\libhal_bsp.a(alt_sys_init.o)
- .debug_abbrev  0x00000399       0x79 ../teste1_bsp/\libhal_bsp.a(alt_busy_sleep.o)
- .debug_abbrev  0x00000412       0x3f ../teste1_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .debug_abbrev  0x00000451       0x3f ../teste1_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .debug_abbrev  0x00000490       0x3f ../teste1_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
- .debug_abbrev  0x000004cf       0xe0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .debug_abbrev  0x000005af       0x7b c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_abbrev  0x00000012      0x10c obj/default/hello_world_small.o
+ .debug_abbrev  0x0000011e       0x97 ../teste1_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_abbrev  0x000001b5       0xa6 ../teste1_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_abbrev  0x0000025b       0x5d ../teste1_bsp/\libhal_bsp.a(alt_usleep.o)
+ .debug_abbrev  0x000002b8       0xe3 ../teste1_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_abbrev  0x0000039b       0x79 ../teste1_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .debug_abbrev  0x00000414       0x3f ../teste1_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_abbrev  0x00000453       0x3f ../teste1_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_abbrev  0x00000492       0x3f ../teste1_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_abbrev  0x000004d1       0xe0 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_abbrev  0x000005b1       0x7b c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
 
-.debug_line     0x00000000     0x19a6
+.debug_line     0x00000000     0x19e6
  *(.debug_line)
  .debug_line    0x00000000       0x66 ../teste1_bsp//obj/HAL/src/crt0.o
- .debug_line    0x00000066      0x4e0 obj/default/hello_world_small.o
- .debug_line    0x00000546      0x217 ../teste1_bsp/\libhal_bsp.a(alt_load.o)
- .debug_line    0x0000075d      0x2c2 ../teste1_bsp/\libhal_bsp.a(alt_main.o)
- .debug_line    0x00000a1f      0x202 ../teste1_bsp/\libhal_bsp.a(alt_usleep.o)
- .debug_line    0x00000c21      0x286 ../teste1_bsp/\libhal_bsp.a(alt_sys_init.o)
- .debug_line    0x00000ea7      0x25e ../teste1_bsp/\libhal_bsp.a(alt_busy_sleep.o)
- .debug_line    0x00001105      0x1b5 ../teste1_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
- .debug_line    0x000012ba      0x1b5 ../teste1_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
- .debug_line    0x0000146f      0x1ce ../teste1_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
- .debug_line    0x0000163d      0x24f c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .debug_line    0x0000188c      0x11a c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_line    0x00000066      0x520 obj/default/hello_world_small.o
+ .debug_line    0x00000586      0x217 ../teste1_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_line    0x0000079d      0x2c2 ../teste1_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_line    0x00000a5f      0x202 ../teste1_bsp/\libhal_bsp.a(alt_usleep.o)
+ .debug_line    0x00000c61      0x286 ../teste1_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_line    0x00000ee7      0x25e ../teste1_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .debug_line    0x00001145      0x1b5 ../teste1_bsp/\libhal_bsp.a(alt_dcache_flush_all.o)
+ .debug_line    0x000012fa      0x1b5 ../teste1_bsp/\libhal_bsp.a(alt_icache_flush_all.o)
+ .debug_line    0x000014af      0x1ce ../teste1_bsp/\libhal_bsp.a(altera_nios2_qsys_irq.o)
+ .debug_line    0x0000167d      0x24f c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_line    0x000018cc      0x11a c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
 
 .debug_frame    0x00000000      0x280
  *(.debug_frame)
@@ -479,16 +479,16 @@ LOAD c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/
  .debug_str     0x000005d1       0x37 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
                                 0x175 (size before relaxing)
 
-.debug_loc      0x00000000      0x383
+.debug_loc      0x00000000      0x404
  *(.debug_loc)
- .debug_loc     0x00000000       0x8f obj/default/hello_world_small.o
- .debug_loc     0x0000008f       0x1f ../teste1_bsp/\libhal_bsp.a(alt_load.o)
- .debug_loc     0x000000ae       0x1f ../teste1_bsp/\libhal_bsp.a(alt_main.o)
- .debug_loc     0x000000cd       0x13 ../teste1_bsp/\libhal_bsp.a(alt_usleep.o)
- .debug_loc     0x000000e0       0x32 ../teste1_bsp/\libhal_bsp.a(alt_sys_init.o)
- .debug_loc     0x00000112       0x50 ../teste1_bsp/\libhal_bsp.a(alt_busy_sleep.o)
- .debug_loc     0x00000162      0x1d2 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
- .debug_loc     0x00000334       0x4f c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
+ .debug_loc     0x00000000      0x110 obj/default/hello_world_small.o
+ .debug_loc     0x00000110       0x1f ../teste1_bsp/\libhal_bsp.a(alt_load.o)
+ .debug_loc     0x0000012f       0x1f ../teste1_bsp/\libhal_bsp.a(alt_main.o)
+ .debug_loc     0x0000014e       0x13 ../teste1_bsp/\libhal_bsp.a(alt_usleep.o)
+ .debug_loc     0x00000161       0x32 ../teste1_bsp/\libhal_bsp.a(alt_sys_init.o)
+ .debug_loc     0x00000193       0x50 ../teste1_bsp/\libhal_bsp.a(alt_busy_sleep.o)
+ .debug_loc     0x000001e3      0x1d2 c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-divmod.o)
+ .debug_loc     0x000003b5       0x4f c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/4.1.2/mno-hw-mul\libgcc.a(lib2-mul.o)
 
 .debug_macinfo
  *(.debug_macinfo)
@@ -514,8 +514,8 @@ LOAD c:/altera/13.0sp1/nios2eds/bin/gnu/h-i686-mingw32/bin/../lib/gcc/nios2-elf/
                 0x00000010       0x30 ../teste1_bsp/\libhal_bsp.a(alt_busy_sleep.o)
                 0x0001a000                __alt_data_end = 0x1a000
                 0x0001a000                PROVIDE (__alt_stack_pointer, __alt_data_end)
-                0x00010640                PROVIDE (__alt_stack_limit, __alt_stack_base)
-                0x00010640                PROVIDE (__alt_heap_start, end)
+                0x00010668                PROVIDE (__alt_stack_limit, __alt_stack_base)
+                0x00010668                PROVIDE (__alt_heap_start, end)
                 0x0001a000                PROVIDE (__alt_heap_limit, 0x1a000)
 OUTPUT(teste1.elf elf32-littlenios2)
 

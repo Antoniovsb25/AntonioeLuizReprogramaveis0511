@@ -31,20 +31,20 @@ int main()
 //5= 110 1101 => hexadecimal = 0x6d
 //1= 000 0110 => hexadecimal = 0x06
 void setup(void){
-	max_timer1 = 1000;
+	max_timer1 = 2000;
 	max_timer2 = 50;
 	max_timer3 = 500;
 	//LAT(HEX5_AVSB_BASE, 0x6d);
 	//LAT(HEX4_AVSB_BASE, 0x06);
 	LAT(HEX5_AVSB_BASE, 0x00);
-	LAT(HEX4_AVSB_BASE, 0x5b);
+	LAT(HEX4_AVSB_BASE, 0x5d);
 
 
 }
 
 void loop(void){
 	f_timers();
-	usleep(1000);
+	usleep(10000);
 }
 
 void f_timers(void){
@@ -106,14 +106,14 @@ unsigned char f_maq(alt_u8 atual){
 
 		case 3:
 				prox_est = 5;
-				un = 0x6d;
-				dz = 0x00;
+				un = 0x00;
+				dz = 0x6d;
 				break;
 
 		case 5:
 				prox_est = 7;
-				un = 0x07;
-				dz = 0x00;
+				un = 0x00;
+				dz = 0x07;
 				break;
 		case 7:
 				prox_est = 11;
@@ -155,7 +155,7 @@ unsigned char f_maq(alt_u8 atual){
 			prox_est = 2;
 			un = 0x5b;
 			dz = 0x00;
-			break;
 		}
-	return prox_est;
+
+
 }

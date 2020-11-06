@@ -13,7 +13,7 @@ void f_timers(void);
 void f_timer1(void);
 void f_timer2(void);
 void f_timer3(void);
-unsigned char f_maq(alt_u8 atual);
+void f_maq(alt_u8 atual);
 
 alt_u16 max_timer1, max_timer2, max_timer3;
 alt_u8 sw, key, ledr, ledg;
@@ -37,7 +37,7 @@ void setup(void){
 	//LAT(HEX5_AVSB_BASE, 0x6d);
 	//LAT(HEX4_AVSB_BASE, 0x06);
 	LAT(HEX5_AVSB_BASE, 0x00);
-	LAT(HEX4_AVSB_BASE, 0x5b);
+	LAT(HEX4_AVSB_BASE, 0x4f);
 
 
 }
@@ -95,7 +95,7 @@ void f_timer3(void){
 	LAT(LEDR_AVSB_BASE, ledr);
 }
 
-unsigned char f_maq(alt_u8 atual){
+void f_maq(alt_u8 atual){
 	alt_u8 prox_est;
 	switch(atual){
 	case 2:
@@ -106,14 +106,14 @@ unsigned char f_maq(alt_u8 atual){
 
 		case 3:
 				prox_est = 5;
-				un = 0x6d;
-				dz = 0x00;
+				un = 0x00;
+				dz = 0x6d;
 				break;
 
 		case 5:
 				prox_est = 7;
-				un = 0x07;
-				dz = 0x00;
+				un = 0x00;
+				dz = 0x07;
 				break;
 		case 7:
 				prox_est = 11;
